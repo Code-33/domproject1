@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Fortune!</title>
+
+
+</head>
+<body>
+    <div id="wordPlace">
+        <h1 style="text-align: center;" id="word"></h1>
+    </div>
+    <div style="text-align: center;" id="formPlace">
+        <form hidden id="game"  method="POST" target="_self" noValidate>
+          <div>
+              <input type="text" id="inputChar" placeholder="EnterLetters" name="letterBox" autofocus />
+          </div>
+        </form>    
+    </div>
+    <div style="text-align: center;" id="btnPlace">
+      <h1 id="shownWord"></h1>
+      <button id="theButton">Start Game</button>
+      <h2 id="errorLine"></h2>
+    </div>
+    <script src="./js/randomWord.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
