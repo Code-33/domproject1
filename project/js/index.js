@@ -160,10 +160,12 @@ function lastShot(){
                  para1.innerHTML = theWord;
                  triesShown.innerHTML = 'Nice job. I knew you could do it';
                  document.getElementById("game").hidden = true;
+                 document.getElementById("tryAgain").hidden = false;//Showing reload page button
               }else{
                  document.getElementById("word").hidden = true;
                  triesShown.innerHTML = `Aww Nice Try, but you didn't get it. The word was ${theWord}.`
                  document.getElementById("game").hidden = true;
+                 document.getElementById("tryAgain").hidden = false;//Showing reload page button
               }
          }
       })
@@ -181,6 +183,7 @@ inputBox.addEventListener("keydown", function listen(event) {
            if(temp === theWord){
               triesShown.innerHTML = 'Congratulations, You Win!!!!';
               document.getElementById("game").hidden = true;
+              document.getElementById("tryAgain").hidden = false;//Showing reload page button
               return -1;
            }
 
