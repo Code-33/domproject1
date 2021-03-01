@@ -161,11 +161,13 @@ function lastShot(){
                  triesShown.innerHTML = 'Nice job. I knew you could do it';
                  document.getElementById("game").hidden = true;
                  document.getElementById("tryAgain").hidden = false;//Showing reload page button
+                 document.getElementById('game').reset();//Reseting the inputBox for when the page reloads
               }else{
                  document.getElementById("word").hidden = true;
                  triesShown.innerHTML = `Aww Nice Try, but you didn't get it. The word was ${theWord}.`
                  document.getElementById("game").hidden = true;
                  document.getElementById("tryAgain").hidden = false;//Showing reload page button
+                 document.getElementById('game').reset();//Reseting the inputBox for when the page reloads
               }
          }
       })
